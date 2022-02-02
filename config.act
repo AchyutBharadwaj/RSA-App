@@ -1,0 +1,43 @@
+set path
+  cipher text = encrypted_text.txt
+  public key = public_key.txt
+  private key = private_key.txt
+  receiver key = public_key.txt
+  status = status.txt
+  history = chat.txt
+end
+
+set key_access
+  default = Fadeel
+  me = Achyut
+  set Ravi
+    to = 1QJYqZFSjDvmwYmjrhRFwUNzN8UAUY45P
+    me = 1Wk9_BvqzGf0jys06Vcg-AUgR2WVZ2UPI
+  end
+  set Fadeel
+    to = 11Fl4NziTLrsaOFYXqIcZRpu1s9HcYbzJ
+    me = 1DGSIp2L4WFWFGiXoOr8Lg1o2HYsSdTlG
+  end
+end
+
+set default
+  set generate
+    bits = 1024
+    cycles = 10
+  end
+  set Encrypt
+    message = Hello!
+    block size = 10
+  end
+  set mail
+    subject = public key
+    emails = achyub@gmail.com
+  end
+  set request
+    subject = public key
+    emails = achyub@gmail.com
+  end
+  set run
+    default = julia
+  end
+end
